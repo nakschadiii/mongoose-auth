@@ -1,0 +1,1 @@
+export type JWT = { sign: (payload: any) => string, verify: (token: string) => any }
