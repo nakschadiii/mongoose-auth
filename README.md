@@ -194,7 +194,6 @@ bun run index.ts
 
 ## Dependencies
 
-- `@faker-js/faker` (dev) - For testing and data generation
 - `@types/bun` (dev) - TypeScript definitions for Bun
 - `typescript` (peer) - TypeScript compiler
 

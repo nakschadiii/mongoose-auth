@@ -2,6 +2,7 @@ export async function verifyOTP(payload: { token: string; code: string; }) {
     const id = (this?.options?.jwt) ?
         (await this.jwt.verify(payload.token))?.id :
         payload.token;
+
     if (!id) throw new Error('Invalid token')
 
     const otpDoc = await this.models.OTP.findById(id);
